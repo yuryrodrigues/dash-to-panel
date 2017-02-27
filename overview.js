@@ -199,7 +199,7 @@ const dtpOverview = new Lang.Class({
             if (number == 10)
                 number = 0;
             let key 	= Gdk.keyval_from_name(number.toString());
-			let key_kp 	= Gdk.keyval_from_name("KP_"+number.toString());
+            let key_kp 	= Gdk.keyval_from_name("KP_"+number.toString());
             if (Gtk.accelerator_valid(key, mods)) {
                 let shortcut 	= Gtk.accelerator_name(key, mods);
 				let shortcut_kp = Gtk.accelerator_name(key_kp, mods);
